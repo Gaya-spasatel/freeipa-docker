@@ -1,0 +1,20 @@
+# https://hub.docker.com/r/freeipa/freeipa-server
+# https://manpages.ubuntu.com/manpages/focal/man1/ipa-server-install.1.html
+version: '3'
+services:
+  freeipa-server:
+    image: freeipa/freeipa-server:fedora-39-4.11.0
+    volumes:
+      - ./freeipa-data:/data:Z
+    #env_file:
+      #- .env
+    ports:
+        - "443:443"
+        - "389:389"
+        - "636:636"
+        - "88:88"
+        - "88:88/udp"
+        - "464:464"
+        - "464:464/udp"
+
+

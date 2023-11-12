@@ -1,0 +1,4 @@
+--realm=FREEIPA-SERVER.GAICH.COM
+--ds-password=Password12345
+--admin-password=PasswordAdmin
+--hostname=FREEIPA-SERVER
